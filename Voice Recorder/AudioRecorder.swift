@@ -55,6 +55,8 @@ class AudioRecorder: NSObject, ObservableObject {
             audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
             audioRecorder.record()
 
+            print("audioFilename written", audioFilename)
+
             recording = true
         } catch {
             print("Could not start recording")
