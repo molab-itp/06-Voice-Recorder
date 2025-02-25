@@ -12,11 +12,12 @@ import SwiftUI
 import Combine
 import AVFoundation
 
-class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
+@Observable
+class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     
 //    let objectWillChange = PassthroughSubject<AudioPlayer, Never>()
     
-    @Published var isPlaying = false
+    var isPlaying = false
 //    {
 //        didSet {
 //            objectWillChange.send(self)

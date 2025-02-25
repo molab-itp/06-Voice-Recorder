@@ -10,7 +10,7 @@ import SwiftUI
 
 struct RecordingsList: View {
     
-    @ObservedObject var audioRecorder: AudioRecorder
+    var audioRecorder: AudioRecorder
     
     var body: some View {
         List {
@@ -34,7 +34,7 @@ struct RecordingRow: View {
     
     var audioURL: URL
     
-    @ObservedObject var audioPlayer = AudioPlayer()
+    var audioPlayer = AudioPlayer()
     
     
     var body: some View {

@@ -11,7 +11,8 @@ import SwiftUI
 import Combine
 import AVFoundation
 
-class AudioRecorder: NSObject, ObservableObject {
+@Observable
+class AudioRecorder: NSObject {
     
     override init() {
         super.init()
@@ -22,9 +23,9 @@ class AudioRecorder: NSObject, ObservableObject {
     
     var audioRecorder: AVAudioRecorder!
     
-    @Published var recordings = [Recording]()
+    var recordings = [Recording]()
     
-    @Published var recording = false
+    var recording = false
 //    {
 //        didSet {
 //            objectWillChange.send(self)
