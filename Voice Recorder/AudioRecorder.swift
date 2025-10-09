@@ -82,8 +82,9 @@ class AudioRecorder: NSObject {
             recordings.append(recording)
         }
         
-        recordings.sort(by: { $0.createdAt.compare($1.createdAt) == .orderedAscending})
-        
+      recordings.sort(by: { $0.createdAt.compare($1.createdAt) == .orderedDescending})
+//      recordings.sort(by: { $0.createdAt.compare($1.createdAt) == .orderedAscending})
+
 //        objectWillChange.send(self)
     }
     

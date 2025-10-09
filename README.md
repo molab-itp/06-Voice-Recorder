@@ -2,9 +2,14 @@
 
   - [source repo](https://github.com/pinlunhuang/Voice-Recorder)
 
+- check audio level on device for playback
 
 - updated for @Observable
 
+
+```
+orderedDescending
+```
 
 # -- Original docs
 
